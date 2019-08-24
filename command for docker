@@ -1,0 +1,2 @@
+# go inside the html directory and run the below command
+docker run -p 80:80 -v "$(pwd)":/usr/share/nginx/html nginx
