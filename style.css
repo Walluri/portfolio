@@ -1,7 +1,29 @@
 body {
-width:35em;
+width:40em;
 margin : 0 auto;
 font-family: Arial, Helvetica, sans-serif;
 line-height: 150%;
 background-color: #8b9dc3;
+}
+h1
+{
+    font-size: 1.2em;
+    padding-left: 20%;
+}
+
+.header-name{
+    font-size: 1.2em;
+    padding-left: 35%;
+}
+
+.portfolio{
+    padding-left: 10%;
+}
+
+.thankyou{
+padding-left: 54%;
+margin-top: 35px;
+}
+.maintenace{
+    padding-left: 10%;
 }
