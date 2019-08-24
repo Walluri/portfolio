@@ -1,2 +1,3 @@
 # go inside the html directory and run the below command
-docker run -p 80:80 -v "$(pwd)":/usr/share/nginx/html nginx
+the nginx.conf file in /etc/nginx refers to /usr/share/nginx for html files.. so the below command is as follows
+docker run -p 80:80 -d -v "$(pwd)":/usr/share/nginx/html nginx
