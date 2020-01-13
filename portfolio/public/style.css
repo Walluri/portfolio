@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  border: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  background-color: #d1d1f9; }
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+.navbar__listitems {
+  padding: 1rem;
+  margin: 3rem; }
+
+.navbar__links {
+  text-decoration: none; }
