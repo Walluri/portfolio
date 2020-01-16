@@ -23,14 +23,15 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: auto; }
+    margin: auto;
+    height: 100%; }
   .navbar__listitems {
     padding: 1rem;
     margin: 3rem;
     font-size: 2rem; }
   .navbar__links {
     text-decoration: none; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 37.5em) {
     .navbar__list {
       display: fixed;
       width: 100%;

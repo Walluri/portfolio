@@ -10,16 +10,16 @@ const Header = () => {
     return (
         <div>
             <BrowserRouter>
-                <nav class='navbar'>                
-                    <div class="navbar__burger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
+                <nav className='navbar'>                
+                    <div className="navbar__burger">
+                        <div className="line"></div>
+                        <div className="line"></div>
+                        <div className="line"></div>
                     </div>
-                    <ul class='navbar__list'>
-                        <li class='navbar__listitems'><Link class='navbar__links' to={'/'}>Home</Link></li>
-                        <li class='navbar__listitems'><Link class='navbar__links' to={'/Skills'}>Skills</Link></li>
-                        <li class='navbar__listitems'><Link class='navbar__links' to={'/Experience'}>Projects</Link></li>
+                    <ul className='navbar__list'>
+                        <li className='navbar__listitems'><Link className='navbar__links' to={'/'}>Home</Link></li>
+                        <li className='navbar__listitems'><Link className='navbar__links' to={'/Skills'}>Skills</Link></li>
+                        <li className='navbar__listitems'><Link className='navbar__links' to={'/Experience'}>Projects</Link></li>
                     </ul>
                 </nav>
                 <Switch>
