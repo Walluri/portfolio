@@ -6,7 +6,10 @@
 // then 16px - 1em
 // 600px - ? : Answer is 600/16 = 37.5em
 // 900px - 900/16 = 56.25em
-// 1200px - 
+// 1200px - 75em
+// 1600px - 100em
+// Now if the user changes the default browser font size to 22pixels - when will the media query for phone (37.5*16=600pixels) be triggered...?
+// phone : 37.5*22 = 825pixels : [say....everything increased in size so the breakpoint got triggered early.]
 @mixin respond($device){
     @if $device == 'phone' 
     {
