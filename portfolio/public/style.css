@@ -24,7 +24,7 @@ body {
 
 .navbar {
   height: 10vh;
-  background-color: lightblue;
+  background-color: #5b78c7;
   position: relative; }
   .navbar__list {
     width: 50%;
@@ -46,18 +46,33 @@ body {
       width: 100%;
       height: 100vh;
       flex-direction: column;
-      background-color: grey;
+      background-color: #8094cc;
       pointer-events: none;
       clip-path: circle(50px at 90% -15%);
       opacity: 0;
-      color: black;
-      transition: all 0.5s ease; }
+      transition: all 0.9s ease; }
     .navbar .animate-list {
       opacity: 1;
       color: black;
       z-index: 2000;
       pointer-events: all;
       clip-path: circle(1000px at 90% 1%); }
+    .navbar__listitems {
+      opacity: 0;
+      transition: all 0.8s; }
+      .navbar__listitems:nth-child(1) {
+        transform: translateX(7rem); }
+      .navbar__listitems:nth-child(2) {
+        transform: translateX(-7rem); }
+      .navbar__listitems:nth-child(3) {
+        transform: translateX(7rem); }
+    .navbar .animate-listitem {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: all; }
+    .navbar__links {
+      font-size: 2rem;
+      color: white; }
     .navbar__burger {
       width: 3rem;
       height: 3rem;
@@ -68,8 +83,20 @@ body {
       transform: translate(-5%, -70%);
       border-radius: 2px; }
       .navbar__burger-line {
-        width: 3rem;
+        z-index: 12;
+        width: 3.5rem;
         height: 3px;
-        background-color: white; }
+        background-color: white;
+        transition: all 0.3s ease; }
         .navbar__burger-line:not(:last-child) {
-          margin-bottom: 3px; } }
+          margin-bottom: 5px; }
+        .navbar__burger-line:first-child {
+          margin-top: 3px; }
+    .navbar .animiate-line1 {
+      transform: rotate(135deg) translateX(9px) translateY(-6px);
+      background-color: red; }
+    .navbar .animiate-line2 {
+      opacity: 0; }
+    .navbar .animiate-line3 {
+      transform: rotate(45deg) translateX(1px) translateY(4px);
+      background-color: red; } }
