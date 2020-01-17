@@ -39,7 +39,8 @@ body {
     margin: 3rem;
     font-size: 2rem; }
   .navbar__links {
-    text-decoration: none; }
+    text-decoration: none;
+    color: white; }
   @media screen and (max-width: 37.5em) {
     .navbar__list {
       display: fixed;
@@ -100,3 +101,12 @@ body {
     .navbar .animiate-line3 {
       transform: rotate(45deg) translateX(1px) translateY(4px);
       background-color: red; } }
+
+.home__section-heading {
+  font-family: sans-serif; }
+
+.home__section-profilepic {
+  font-family: sans-serif; }
+
+.home__section-aboutme {
+  font-family: sans-serif; }

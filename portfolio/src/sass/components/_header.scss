@@ -21,10 +21,10 @@
 
      &__links{
         text-decoration: none;
+        color:white;
      }
  
      @include respond('phone'){
-
          &__list{
             display: fixed;
             width:100%;
@@ -69,7 +69,6 @@
             font-size: 2rem;
             color:white;            
          }
-
 
          &__burger{
             width : 3rem;
