@@ -93,6 +93,8 @@ body {
           margin-bottom: 5px; }
         .navbar__burger-line:first-child {
           margin-top: 3px; }
+      .navbar__burger:hover {
+        cursor: pointer; }
     .navbar .animiate-line1 {
       transform: rotate(135deg) translateX(9px) translateY(-6px);
       background-color: red; }
@@ -102,11 +104,12 @@ body {
       transform: rotate(45deg) translateX(1px) translateY(4px);
       background-color: red; } }
 
-.home__section-heading {
-  font-family: sans-serif; }
-
-.home__section-profilepic {
-  font-family: sans-serif; }
-
-.home__section-aboutme {
-  font-family: sans-serif; }
+.home__section {
+  background-color: #ff5555;
+  padding: 5rem; }
+  .home__section-heading {
+    font-family: sans-serif; }
+  .home__section-profilepic {
+    font-family: sans-serif; }
+  .home__section-aboutme {
+    font-family: sans-serif; }

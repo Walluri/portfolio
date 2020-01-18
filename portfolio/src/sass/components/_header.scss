@@ -93,9 +93,9 @@
 
                transition: all 0.3s ease;
             }
-            // &:hover &-line{
-            //    background-color:rgb(155, 209, 155);
-            // }
+             &:hover{
+                cursor: pointer;
+             }
          }
 
          .animiate-line1 {
