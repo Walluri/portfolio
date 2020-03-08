@@ -1,3 +1,8 @@
-# go inside the html directory and run the below command
-the nginx.conf file in /etc/nginx refers to /usr/share/nginx for html files.. so the below command is as follows
+Do : Go inside your html directory and run the below docker command.
+Why : The nginx.conf file in /etc/nginx refers to /usr/share/nginx for html files.. so the below command is as follows
+
 docker run -p 80:80 -d -v "$(pwd)":/usr/share/nginx/html nginx
+
+OR 
+
+sudo docker run -p 80:80 -d -v "/etc/nginx/nginx.conf":"/etc/nginx/nginx.conf" -v "$(pwd)":/usr/share/nginx/html nginx
