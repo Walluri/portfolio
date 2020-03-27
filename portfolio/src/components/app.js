@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './header';
+import Header from './routes/header';
 
 const App = () => {
     return (
