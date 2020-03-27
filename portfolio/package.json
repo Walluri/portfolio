@@ -15,11 +15,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "compileandwatch:sass": "node-sass ./src/sass/main.scss ./public/style.css -w",
+    "dev-compileandwatchsass": "node-sass ./src/sass/main.scss ./public/style.css -w",
     "compile:sass": "node-sass ./src/sass/main.scss ./public/style.compiled.css",    
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ./public/style.compiled.css -o ./public/style.prefix.css",
-    "compress:css": "node-sass ./public/style.prefix.css ./public/style.css --output-style compressed",
-    "build:css" : "npm-run-all compile:sass prefix:css compress:css"
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ./public/style.compiled.css -o ./public/style.prefixed.css",
+    "compress:css": "node-sass ./public/style.prefixed.css ./public/style.css --output-style compressed",
+    "build:css" : "npm-run-all compile:sass prefix:css compress:css",
+    
+    "dev" : "run-p dev-compileandwatchsass start",
+    "prod" : "npm-run-all compile:sass prefix:css compress:css build"
   },
   "eslintConfig": {
     "extends": "react-app"
