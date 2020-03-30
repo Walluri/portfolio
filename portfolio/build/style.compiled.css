@@ -24,7 +24,7 @@ body {
 
 .navbar {
   height: 10vh;
-  background-color: #5b78c7;
+  background-color: #5f5f5f;
   position: relative; }
   .navbar__list {
     width: 50%;
@@ -37,10 +37,18 @@ body {
   .navbar__listitems {
     padding: 1rem;
     margin: 3rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    transition: all 0.1s ease-in; }
+    .navbar__listitems:hover {
+      transform: scale(1.2);
+      border: 1px solid white;
+      border-radius: 10px; }
   .navbar__links {
     text-decoration: none;
-    color: white; }
+    color: white;
+    transition: all 0.1s ease; }
+    .navbar__links:hover {
+      color: whitesmoke; }
   @media screen and (max-width: 37.5em) {
     .navbar__list {
       display: fixed;
@@ -105,11 +113,51 @@ body {
       background-color: red; } }
 
 .home__section {
-  background-color: #ff5555;
+  background-color: #383838;
   padding: 5rem; }
-  .home__section-heading {
-    font-family: sans-serif; }
-  .home__section-profilepic {
-    font-family: sans-serif; }
-  .home__section-aboutme {
-    font-family: sans-serif; }
+  .home__section__container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .home__section__container-picture {
+      font-family: sans-serif;
+      width: 50%;
+      height: 50%;
+      margin-top: 2.5rem;
+      margin-bottom: 5rem; }
+      .home__section__container-picture-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3); }
+    .home__section__container-title {
+      font-family: sans-serif;
+      margin-bottom: 5rem;
+      color: white;
+      letter-spacing: 1.5px;
+      font-size: 2.5rem;
+      padding-bottom: 3px;
+      border-bottom: 1px solid white;
+      transition: all 0.1s ease; }
+      .home__section__container-title:hover {
+        transform: scale(1.1);
+        color: whitesmoke; }
+    .home__section__container-goal {
+      font-family: sans-serif;
+      color: white;
+      margin: 0 7rem;
+      letter-spacing: 0.7px;
+      margin-bottom: 5rem;
+      font-size: 2rem; }
+    .home__section__container-contact {
+      color: white;
+      font-size: 1.8rem; }
+      .home__section__container-contact ul {
+        list-style: none;
+        display: flex; }
+        .home__section__container-contact ul li {
+          margin-right: 1rem; }
+          .home__section__container-contact ul li img {
+            fill: red; }

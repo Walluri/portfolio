@@ -10,3 +10,6 @@ IF YOU USE THIS :  concat -o style.concat.css ./style.compiled.css ./fontawesome
 COMMENT IN HTML :  <link rel="stylesheet" href="./fontawesome/all.css" >
 
 2. 
+add *.svg files to the gitignore. We are taking the path and embedding it in a reactJS component in the resource folder itself.
+
+3.
