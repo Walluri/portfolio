@@ -36,15 +36,41 @@
             justify-content: space-evenly;
             //border: 1px dashed white;
             gap: 2rem 2rem;
+
+            &:nth-child(1){
+                transform: translateX(-1.3rem);
+            }  
+
+            &:nth-child(2){
+                transform: translateX(-1.7rem);
+            }  
+
             svg{
                 width : 6rem;
-                height : 6rem;
+                height : 6rem;            
             }
             .text{
                 font-size: 3.5rem;
                 color:white;
                 font-family: sans-serif;
             }
+        }
+    }
+
+    &-other
+    {
+        width : 75%;
+        border: 1px dashed white;
+        height : 500px;
+        margin : 0 auto;
+        margin-top : 5rem;
+        &-skillbox{
+            border:1px solid red;
+            font-size: 3rem;
+            //color:white;
+            width:6rem;
+            height:6rem;  
+                    
         }
     }
 }

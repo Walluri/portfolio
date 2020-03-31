@@ -59,7 +59,8 @@ body {
       pointer-events: none;
       clip-path: circle(50px at 90% -15%);
       opacity: 1;
-      transition: all 0.9s ease; }
+      transition: all 0.9s ease;
+      z-index: 1900; }
     .navbar .animate-list {
       opacity: 1;
       color: black;
@@ -192,6 +193,10 @@ body {
       display: flex;
       justify-content: space-evenly;
       gap: 2rem 2rem; }
+      .section__skills-web-skillbox:nth-child(1) {
+        transform: translateX(-1.3rem); }
+      .section__skills-web-skillbox:nth-child(2) {
+        transform: translateX(-1.7rem); }
       .section__skills-web-skillbox svg {
         width: 6rem;
         height: 6rem; }
@@ -199,3 +204,14 @@ body {
         font-size: 3.5rem;
         color: white;
         font-family: sans-serif; }
+  .section__skills-other {
+    width: 75%;
+    border: 1px dashed white;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 5rem; }
+    .section__skills-other-skillbox {
+      border: 1px solid red;
+      font-size: 3rem;
+      width: 6rem;
+      height: 6rem; }
