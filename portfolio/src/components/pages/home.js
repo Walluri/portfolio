@@ -1,6 +1,6 @@
 import React from 'react';
 import img from "../../resources/img/300by300.png"
-import {getSVG} from '../../resources/svg/svgRC'
+import {getSVG} from '../../resources/svg/svgRCHome'
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
                         <ul>
                             <li> <a href="https://www.linkedin.com/in/walluri/" 
                                     target="_blank"  rel="noopener noreferrer">{getSVG({svg:'linkedin'})}</a></li>
-                            <li> <a href="https://www.linkedin.com/in/walluri/" 
+                            <li> <a href="https://github.com/walluri" 
                                     target="_blank"  rel="noopener noreferrer">{getSVG({svg:'github'})}</a></li>
                         </ul>
                     </div>
