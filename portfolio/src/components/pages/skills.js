@@ -6,27 +6,22 @@ const Skills = () => {
         <div className="section__skills">
             <div className="section__skills-web">
                 <div className="section__skills-web-title">
-                    <h2>Web developer Skills</h2>
+                    <h2>Dev - Skills</h2>
                 </div>
-                <div className="section__skills-web-skills">
-
-                    <div className="section__skills-web-skillbox">
-                        <div className='svg'> {getSkillSVG({svg:'html5'})} </div>
-                        <div className='text'>HTML5</div>
-                    </div>
-                    <div className="section__skills-web-skillbox">
-                        <div className='svg'> {getSkillSVG({svg:'css3'})} </div>
-                        <div className='text'>CSS3</div>
-                    </div>  
-                    <div className="section__skills-web-skillbox">
-                        <div className='svg'> {getSkillSVG({svg:'javascript'})} </div>
-                        <div className='text'> Javascript </div>
-                    </div>
-                    <div className="section__skills-web-skillbox">
-                        <div className='svg'> {getSkillSVG({svg:'reactjs'})} </div>
-                        <div className='text'>ReactJS</div>
-                    </div>                                         
+                <div className="section__skills-web-skillsImage">
+                    <div className='svg'> {getSkillSVG({svg:'html5'})} </div>
+                    <div className='svg'> {getSkillSVG({svg:'css3'})} </div>                    
+                    <div className='svg'> {getSkillSVG({svg:'javascript'})} </div>
+                    <div className='svg'> {getSkillSVG({svg:'reactjs'})} </div>                                                            
                 </div>
+                <div className="section__skills-web-skillsText">
+                    <ul>
+                        <li key='1'> React way of developing components</li>
+                        <li key='2'> Advanced CSS with Animations</li>
+                        <li key='3'> Javascript using ES6</li>
+                        <li key='4'> And a lot more .. with a twist of UI/UX design</li>
+                    </ul>
+                </div>                                
             </div>
             <div className="section__skills-other">
                 <div className="section__skills-other-skillbox">

@@ -1,0 +1,14 @@
+@keyframes mergeIcons {
+    0% {
+        column-gap: 300px;
+    }
+  
+    75% {
+        column-gap: 5px;
+    }
+    
+    100% {
+        column-gap: 30px;
+        opacity : 1;
+    }
+  }
