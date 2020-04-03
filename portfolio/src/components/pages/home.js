@@ -2,7 +2,6 @@ import React from 'react';
 import img from "../../resources/img/300by300.png"
 import {getSVG} from '../../resources/svg/svgRCHome'
 
-
 const Home = () => {
     return (
         <main>
@@ -13,7 +12,6 @@ const Home = () => {
                         <img className="home__section__container-picture-image" 
                                 src={img} alt="profile"/>                       
                     </div>
-
 
                     <div className="home__section__container-title">
                         <h3>WEB DEVELOPER - ReactJS   NODEJS</h3>
@@ -41,12 +39,12 @@ const Home = () => {
                             <li>Contact</li>
                             <li>{getSVG({svg:'phone'})}  +91 6305048661 </li>
                             <li>{getSVG({svg:'email'})}  contact.admin@walluri.com</li>
-                            <li>Copyright &copy; 2020 India,Inc. All rights reserved. </li>
                         </ul>
                     </div>
 
                 </div>
             </section>
+            <footer/>
         </main>
     )
 }

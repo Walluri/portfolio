@@ -19,7 +19,7 @@ const Skills = () => {
                         <li key='1'> React way of developing components</li>
                         <li key='2'> Advanced CSS with Animations</li>
                         <li key='3'> Javascript using ES6</li>
-                        <li key='4'> And a lot more .. with a twist of UI/UX design</li>
+                        <li key='4'> And the below Tech Stack </li>
                     </ul>
                 </div>                                
             </div>
@@ -64,7 +64,9 @@ const Skills = () => {
                     <div className='svg'> {getSkillSVG({svg:'mongodb'})} </div>
                 </div>                                                 
             </div>
+
         </div>
+
     )
 }
 

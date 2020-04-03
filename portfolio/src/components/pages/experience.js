@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <div>My previous Experience</div>
+        <div className="experience">My previous Experience</div>
     )
 }
 

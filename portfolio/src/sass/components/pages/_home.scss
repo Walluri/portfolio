@@ -1,4 +1,5 @@
 .home__section{
+    margin-top : 10vh;
     //background-color: #fbc2eb;
     background-color: #383838;
     padding: 5rem;
@@ -99,13 +100,7 @@
                         width : 30%;
                         margin : 0 auto;
                     }
-                    &:last-child{
-                        color:black;
-                        &:hover{
-                            border-bottom : 2px solid black;
-                            font-weight: 500;
-                        }
-                    }
+
                 }
             }
         }

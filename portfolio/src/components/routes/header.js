@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import Home from '../pages/home';
 import Skills from '../pages/skills';
 import Experience from '../pages/experience';
+import Footer from './footer';
+
 
 import {BrowserRouter, Switch, Route,Link} from 'react-router-dom';
 
@@ -39,7 +41,9 @@ const Header = () => {
                     <Route exact path='/Skills' component={Skills} />
                     <Route exact path='/Experience' component={Experience} />
                 </Switch>
+                <Footer/>
             </BrowserRouter> 
+
         </div>
     )
 }
