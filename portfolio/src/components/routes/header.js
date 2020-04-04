@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import Home from '../pages/home';
-import Skills from '../pages/skills';
+import Skills from '../pages/skills/skills';
 import Experience from '../pages/experience';
 import Footer from './footer';
 

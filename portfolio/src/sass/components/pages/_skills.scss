@@ -139,4 +139,35 @@
             }                    
         }
     }
+
+    &-popup{
+        //border: 0.1rem solid whitesmoke;
+        padding : 1rem;
+        position : fixed;
+        width : 30vw;     height : 70vh;        
+        left : 50%;       top : 50%;
+        transform : translate(-50%,-50%) scale(0);
+        transition : all .5s cubic-bezier(.59,1.44,.35,1.18);
+
+        text-align: center;       font-size: 3rem;       color: white;
+        background-color: grey;
+        border-radius: 2rem;z-index: 1000;
+
+        &.popup_active{
+            transform : translate(-50%,-50%) scale(1);
+        }
+    }
+    &-overlay{        
+        position : fixed;
+        width : 100vw;        height : 100vh;
+        left:0;   top:0;   right:0;  bottom:0;        
+        background-color: rgba(0,0,0, 0.75);
+        
+        transform : scale(0);                
+        transition : all .3s cubic-bezier(.59,1.44,.35,1.18);
+
+        &.overlay_active{
+            transform : scale(1);
+        }
+    }
 }

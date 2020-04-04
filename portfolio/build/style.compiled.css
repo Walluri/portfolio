@@ -37,7 +37,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 5000; }
   .navbar__list {
     width: 50%;
     list-style: none;
@@ -360,6 +361,36 @@ body {
         border-bottom: 3px solid white;
         padding-bottom: 5px;
         cursor: pointer; }
+  .section__skills-popup {
+    padding: 1rem;
+    position: fixed;
+    width: 30vw;
+    height: 70vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.5s cubic-bezier(0.59, 1.44, 0.35, 1.18);
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    background-color: grey;
+    border-radius: 2rem;
+    z-index: 1000; }
+    .section__skills-popup.popup_active {
+      transform: translate(-50%, -50%) scale(1); }
+  .section__skills-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0.59, 1.44, 0.35, 1.18); }
+    .section__skills-overlay.overlay_active {
+      transform: scale(1); }
 
 .experience {
   margin-top: 10vh;
@@ -378,8 +409,8 @@ body {
         width: 60%; } }
     @media screen and (max-width: 56.25em) {
       .footer__text {
-        width: 70%; } }
+        width: 80%; } }
     @media screen and (max-width: 37.5em) {
       .footer__text {
-        width: 80%;
+        width: 90%;
         font-size: 1.4rem; } }

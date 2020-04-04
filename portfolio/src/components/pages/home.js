@@ -2,6 +2,12 @@ import React from 'react';
 import img from "../../resources/img/300by300.png"
 import {getSVG} from '../../resources/svg/svgRCHome'
 
+const goal = "I am an enthusiastic web developer, who likes to develop apps using the latest and cutting edge technologies."
+const goal2 = " I can develop Serverless, High performace, Scalable and Responsive apps using the MERN stack, with an amazing UI."
+const  linkedinURL = "https://www.linkedin.com/in/walluri/";
+const githubURL = "https://github.com/walluri";
+
+
 const Home = () => {
     return (
         <main>
@@ -19,19 +25,15 @@ const Home = () => {
 
                     <div className="home__section__container-worklinks">
                         <ul>
-                            <li> <a href="https://www.linkedin.com/in/walluri/" 
-                                    target="_blank"  rel="noopener noreferrer">{getSVG({svg:'linkedin'})}</a></li>
-                            <li> <a href="https://github.com/walluri" 
-                                    target="_blank"  rel="noopener noreferrer">{getSVG({svg:'github'})}</a></li>
+                            <li> <a href={linkedinURL} target="_blank"  
+                            rel="noopener noreferrer">{getSVG({svg:'linkedin'})}</a></li>
+                            <li> <a href={githubURL} target="_blank"
+                            rel="noopener noreferrer">{getSVG({svg:'github'})}</a></li>
                         </ul>
                     </div>                    
 
                     <div className="home__section__container-goal">
-                        <p> I am an enthusiastic web developer, who likes to develop apps 
-                            using the latest and cutting edge technologies.<br/><br/>
-                            I can develop Serverless, High performace, Scalable and Responsive apps 
-                            using the MERN stack, with an amazing UI.
-                        </p>
+                        <p> {goal}<br/><br/> {goal2}</p>
                     </div>
 
                     <div className="home__section__container-contact">
