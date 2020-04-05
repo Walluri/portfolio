@@ -153,6 +153,23 @@
         background-color: grey;
         border-radius: 2rem;z-index: 1000;
 
+        .popup_header{    
+            display:flex;
+            justify-content: space-around; 
+            border-bottom: 0.2rem solid black;       
+            .popup_title{
+                color:beige;
+            }
+            .popup_close{            
+                color:black;
+                transform:scale(1.5);
+                cursor: pointer;
+                &:hover{
+                    color:red;
+                }
+            }
+        }
+
         &.popup_active{
             transform : translate(-50%,-50%) scale(1);
         }

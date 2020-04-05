@@ -18,8 +18,17 @@ export const Overlaypopup = (props)=>{
     return (
         <div>            
             <div  className={classListP} id="svgskill_popup">
-                popup
-                <div className="pop_close" id="pop_close" onClick={closeClicked}>&times;</div>
+                <div className="popup_header">
+                    <div className="popup_title">{props.title}</div>
+                    <div className="popup_close" id="pop_close" onClick={closeClicked}>&times;</div>
+                </div>
+                <div className="popup_content">
+                    {
+                        props.content.map((item,id)=>{
+                            return (<div id={id}>{item}</div>)
+                        })
+                    }
+                </div>
             </div>
             <div className={classListO} id="svgskill_overlay" 
                 onClick={overlayclick}>

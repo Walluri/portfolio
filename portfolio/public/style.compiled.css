@@ -376,6 +376,18 @@ body {
     background-color: grey;
     border-radius: 2rem;
     z-index: 1000; }
+    .section__skills-popup .popup_header {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 0.2rem solid black; }
+      .section__skills-popup .popup_header .popup_title {
+        color: beige; }
+      .section__skills-popup .popup_header .popup_close {
+        color: black;
+        transform: scale(1.5);
+        cursor: pointer; }
+        .section__skills-popup .popup_header .popup_close:hover {
+          color: red; }
     .section__skills-popup.popup_active {
       transform: translate(-50%, -50%) scale(1); }
   .section__skills-overlay {
