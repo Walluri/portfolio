@@ -144,21 +144,32 @@
         //border: 0.1rem solid whitesmoke;
         padding : 1rem;
         position : fixed;
-        width : 30vw;     height : 70vh;        
+        width : 30vw;     //height : 70vh;        
         left : 50%;       top : 50%;
         transform : translate(-50%,-50%) scale(0);
         transition : all .5s cubic-bezier(.59,1.44,.35,1.18);
 
-        text-align: center;       font-size: 3rem;       color: white;
+        font-size: 3rem;
+        text-align: center;              color: white;
         background-color: grey;
         border-radius: 2rem;z-index: 1000;
 
+        @include respond ('tab-land'){ width : 40vw;       }
+        @include respond ('tab-port'){ width : 50vw;        }
+        @include respond ('phone'){ width : 70vw;        }
+
         .popup_header{    
             display:flex;
-            justify-content: space-around; 
+            justify-content: space-between; 
+            padding : 1rem;
             border-bottom: 0.2rem solid black;       
             .popup_title{
                 color:beige;
+                text-transform: uppercase;
+                color:black;
+                letter-spacing: 1px;
+                font-size: 2.5rem;
+                padding-left : 3rem;
             }
             .popup_close{            
                 color:black;
@@ -166,6 +177,22 @@
                 cursor: pointer;
                 &:hover{
                     color:red;
+                }
+            }
+        }
+
+        .popup_content{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2rem;
+            font-size: 2rem;
+            div{
+                padding : 1rem;
+                color:black;
+                &:hover{
+                    color: yellowgreen;
+                    cursor: pointer;
                 }
             }
         }

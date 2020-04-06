@@ -365,29 +365,55 @@ body {
     padding: 1rem;
     position: fixed;
     width: 30vw;
-    height: 70vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.5s cubic-bezier(0.59, 1.44, 0.35, 1.18);
-    text-align: center;
     font-size: 3rem;
+    text-align: center;
     color: white;
     background-color: grey;
     border-radius: 2rem;
     z-index: 1000; }
+    @media screen and (max-width: 75em) {
+      .section__skills-popup {
+        width: 40vw; } }
+    @media screen and (max-width: 56.25em) {
+      .section__skills-popup {
+        width: 50vw; } }
+    @media screen and (max-width: 37.5em) {
+      .section__skills-popup {
+        width: 70vw; } }
     .section__skills-popup .popup_header {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 1rem;
       border-bottom: 0.2rem solid black; }
       .section__skills-popup .popup_header .popup_title {
-        color: beige; }
+        color: beige;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+        padding-left: 3rem; }
       .section__skills-popup .popup_header .popup_close {
         color: black;
         transform: scale(1.5);
         cursor: pointer; }
         .section__skills-popup .popup_header .popup_close:hover {
           color: red; }
+    .section__skills-popup .popup_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem;
+      font-size: 2rem; }
+      .section__skills-popup .popup_content div {
+        padding: 1rem;
+        color: black; }
+        .section__skills-popup .popup_content div:hover {
+          color: yellowgreen;
+          cursor: pointer; }
     .section__skills-popup.popup_active {
       transform: translate(-50%, -50%) scale(1); }
   .section__skills-overlay {
@@ -405,8 +431,57 @@ body {
       transform: scale(1); }
 
 .experience {
-  margin-top: 10vh;
   background-color: #383838; }
+  .experience:first-child {
+    margin-top: 10vh;
+    padding-top: 5rem !important; }
+  .experience:not(:first-child) {
+    padding-top: 5rem !important; }
+  .experience__content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem;
+    color: white;
+    font-size: 1.8rem;
+    border: 1px solid white;
+    border-radius: 1rem; }
+    @media screen and (max-width: 75em) {
+      .experience__content {
+        width: 75%; } }
+    @media screen and (max-width: 56.25em) {
+      .experience__content {
+        width: 80%; } }
+    @media screen and (max-width: 37.5em) {
+      .experience__content {
+        width: 95%; } }
+    .experience__content-header {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid wheat; }
+      @media screen and (max-width: 56.25em) {
+        .experience__content-header {
+          flex-direction: column; } }
+      @media screen and (max-width: 56.25em) {
+        .experience__content-header .company {
+          margin-bottom: 3rem; } }
+      .experience__content-header .role {
+        text-transform: uppercase; }
+    .experience__content-body {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .experience__content-body .duties {
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid wheat; }
+      .experience__content-body .dutiesList ul {
+        list-style: none; }
+        .experience__content-body .dutiesList ul li:not(:last-child) {
+          padding-bottom: 2.5rem;
+          letter-spacing: 1px; }
 
 .footer {
   background-color: #383838;

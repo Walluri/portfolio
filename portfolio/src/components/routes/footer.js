@@ -6,7 +6,7 @@ const Footer = ()=>{
          //All rights reserved.</div>
         <div className="footer">
             <div className="footer__text">
-            <h4>Copyright &copy; 2020 Valluri VeeraVenkata SatyaPrakash Inc.<br/> All rights reserved.</h4>
+            <h4>Copyright &copy; 2020 Valluri VeeraVenkata SatyaPrakash (WALLURI).<br/> All rights reserved.</h4>
             </div>
         </div>
     )

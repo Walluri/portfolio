@@ -25,7 +25,7 @@ export const Overlaypopup = (props)=>{
                 <div className="popup_content">
                     {
                         props.content.map((item,id)=>{
-                            return (<div id={id}>{item}</div>)
+                            return (<div id={id} key={id}>{item}</div>)
                         })
                     }
                 </div>
