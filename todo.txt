@@ -1,0 +1,27 @@
+Menu : why so much gap in the pop-ups.
+
+1. Home Page : Text about description must be changed.
+ 	    : Why is the description not highlighting yourself as a react and node developer
+	   
+ - mobile view : alignment of icons and contact info
+ - desktop view - same as above
+ - chitti phani idea of changing home page text
+ - desktop view : the photo is big.
+- in home page the phone icon and phone number are not inline + email also.
+- shoulder level picture should be thereer.
+- title animate should happen from top to bottom.
+
+
+2. skills page : 3 svg icons must have the same color
+        	   : change the icon for cloud.. its like a download symbol
+                    : React and Node logo must be same and same color also ?		
+	    : Scalable such gramatical mistakes should be corrected.
+
+3. Experience :
+ text should be in center.
+ Responsive design close button is overlapping.
+ line must animate from left to right.
+
+	
+
+
