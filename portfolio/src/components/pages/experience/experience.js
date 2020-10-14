@@ -16,6 +16,7 @@ const Experience = ()=>{
     return (
     <div>
         <div style={divStyle}>Experience and Education</div>
+        <ExperienceComponent matter={GetExperienceContent('ABB2')} />
         <ExperienceComponent matter={GetExperienceContent('ABB')} />
         <ExperienceComponent matter={GetExperienceContent('Integra')} />
         <ExperienceComponent matter={GetExperienceContent('Northgate')} />
