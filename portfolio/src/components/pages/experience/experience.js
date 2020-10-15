@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect }from 'react'
 import {ExperienceComponent} from './experienceComponent'
 import GetExperienceContent from './ExperienceContent'
 
@@ -13,6 +13,17 @@ const divStyle = {
   };
 
 const Experience = ()=>{
+    const sendRequest = ()=>{
+        fetch('https://703ridac1g.execute-api.ap-south-1.amazonaws.com/TestStage', {
+            method: 'PUT',
+            headers: {'Content-Type': 'application/json'}
+          })
+          .then((response) => response.json())
+          .then((res) => {   console.log('Success:', res);   })
+          .catch((error) => {   console.error('Error:', error); });
+    }
+    useEffect(sendRequest,[]);
+
     return (
     <div>
         <div style={divStyle}>Experience and Education</div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import img from "../../resources/img/300by300.png"
 import {getSVG} from '../../resources/svg/svgRCHome'
 
@@ -9,17 +9,6 @@ const githubURL = "https://github.com/walluri";
 
 
 const Home = () => {
-
-    const sendRequest = ()=>{
-        fetch('https://703ridac1g.execute-api.ap-south-1.amazonaws.com/TestStage', {
-            method: 'PUT',
-            headers: {'Content-Type': 'application/json'}
-          })
-          .then((response) => response.json())
-          .then((res) => {   console.log('Success:', res);   })
-          .catch((error) => {   console.error('Error:', error); });
-    }
-    useEffect(sendRequest,[]);
 
     return (
         <main>
