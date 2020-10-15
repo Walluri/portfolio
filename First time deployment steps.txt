@@ -1,0 +1,44 @@
+Steps While deploying your portfolio in a new PC.
+
+When you create an instance - download the pem file for the region where you are creating the instance.
+inbound security group rules
+22(ssh) : incoming from anywhere
+80(http) : incoming from anywhere.
+
+
+connecting to the aws machine.
+ssh -i \'MumbaiKeyPair-portfoliookati.pem\'  -v -o ServerAliveInterval=60 ec2-user@ec2-3-6-37-2.ap-south-1.compute.amazonaws.com
+
+Your userdata should specifically be 
+
+1.install steps
+sudo yum update -y
+sudo amazon-linux-extras install docker
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo yum install git
+
+
+2.application download
+
+cd ~
+mkdir portfolio
+chmod 777 portfolio
+cd portfolio
+git init
+git pull https://github.com/Walluri/portfolio
+docker run --name nginx1 -v ~/portfolio/portfolio/build:/usr/share/nginx/html:ro -p 80:80 -d nginx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
