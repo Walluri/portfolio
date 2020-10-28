@@ -41,7 +41,7 @@ const Home = () => {
                         <ul>
                             <li>Contact</li>
                             <li>{getSVG({svg:'phone'})}  +91 6305048661 </li>
-                            <li>{getSVG({svg:'email'})}  contact.admin@walluri.com</li>
+                            <li>{getSVG({svg:'email'})}  prakash4455@gmail.com</li>
                         </ul>
                     </div>
 
