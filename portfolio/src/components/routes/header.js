@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 
 import Home from '../pages/home';
 import Skills from '../pages/skills/skills';
@@ -12,7 +12,18 @@ const Header = () => {
 
     const [menu,setmenu] = useState(false);
 
-    const clicked = ()=>  setmenu(!menu);                    
+    const clicked = ()=>  setmenu(!menu); 
+    
+    const sendRequest = ()=>{
+        fetch('https://703ridac1g.execute-api.ap-south-1.amazonaws.com/TestStage', {
+            method: 'PUT',
+            headers: {'Content-Type': 'application/json'}
+          })
+          .then((response) => response.json())
+          .then((res) => {   console.log('Success:', res);   })
+          .catch((error) => {   console.error('Error:', error); });
+    }
+    useEffect(sendRequest,[]);                   
 
     return (
         <div>
