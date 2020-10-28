@@ -10,7 +10,7 @@ const GetSkillContent = (svgtext)=>{
             return ['Awk , Grep, Sed Utilities','File Ops, and Substitution commands','Bash script debugging']
         }
         case 'cloud' :{
-            return ['AWS' , 'Google Cloud Platform','Route53','Compute Engine & Networking']
+            return ['EC2','Lambda','DynamoDB','Api Gateway']
         }
         case 'docker' :{
             return ['Docker Containers and Images','Data Volumes' , 'Networking','Building Docker images']
@@ -31,10 +31,10 @@ const GetSkillContent = (svgtext)=>{
             return ['Reverse proxy setting','Configuring nginx as a Web Server' , 'nginx + Docker']
         }
         case 'es6' :{
-            return ['Arrow Functions','Array and object destructering','Promises']  
+            return ['ES Next','Asynchronous Javascript','Data Structure Handling']  
         }
         case 'nodejs' :{
-            return ['Express','Authentication and Authorization with security','Payments Email and Fileuploads']
+            return ['Express','Authentication and Authorization with security','Email and Fileuploads']
         }         
         case 'mongodb' :{
             return ['MongoDB with Mongoose','Mongo DB Atlas','MongoDB Data Modelling']

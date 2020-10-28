@@ -3,7 +3,7 @@ import img from "../../resources/img/300by300.png"
 import {getSVG} from '../../resources/svg/svgRCHome'
 
 const goal = "I am an enthusiastic web developer, who likes to develop apps using the latest and cutting edge technologies."
-const goal2 = " I can develop Serverless, High performace, Scalable and Responsive apps using the MERN stack, with an amazing UI."
+const goal2 = " I can develop Serverless, High performace, Scalable and Responsive apps using the MERN stack."
 const  linkedinURL = "https://www.linkedin.com/in/walluri/";
 const githubURL = "https://github.com/walluri";
 

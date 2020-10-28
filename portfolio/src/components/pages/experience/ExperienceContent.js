@@ -2,21 +2,22 @@ const GetExperienceContent = (svgtext)=>{
     switch(svgtext){
         case 'ABB2' :{
             return {
-                name:'ABB AIC(2018 November - Present), India/Sweden',
-                duration:'2018-Present',
+                name:'ABB Ability Innovation Center (2018 November - Present), India/Sweden',
+                duration:'2018 November - Present',
                 role :'Senior software engineer',
                 rnrDesktop:[
                     'Agile Method of delivering features',
-                    'Develop ELK stack components',
-                    'Mentor new developers about the product'],
+                    'Develop ReactJs re-usable Components',
+                    'Write CSS3 code using SASS Libraries',
+                ],
                 rnrMobile :['roles 1','roles 2','roles 3','roles 4']
             } 
         }
         
         case 'ABB' :{
             return {
-                name:'ABB GISL(2014 Dec - 2018 July), India/Sweden',
-                duration:'2014-2018',
+                name:'ABB GISL (2014 Dec - 2018 July), India/Sweden',
+                duration:'2014 Dec - 2018 July',
                 role :'Senior software engineer',
                 rnrDesktop:[
                     'Design and develop UI dashboards to show Live and Historical data retreived from controllers.',
